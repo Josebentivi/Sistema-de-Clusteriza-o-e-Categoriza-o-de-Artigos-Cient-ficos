@@ -93,7 +93,7 @@ O notebook está organizado em seções sequenciais:
 5. Clusterização e análise
 6. Visualização dos resultados
 
-## 📈 Resultados Esperados
+## 📈 Resultados
 
 - **Clusters temáticos** identificados automaticamente
 - **Bibliotecas especializadas** organizadas por tópico
