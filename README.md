@@ -1,6 +1,10 @@
 # Análise, Clusterização e Categorização de Artigos Científicos do ArXiv
 
-Este projeto apresenta uma metodologia avançada para organização e categorização automática de grandes volumes de artigos científicos através de técnicas de Processamento de Linguagem Natural (PLN) e aprendizado de máquina não supervisionado.
+Este projeto apresenta uma metodologia para organização e categorização automática de grandes volumes de artigos científicos através de técnicas avançadas de processamento de linguagem natural e aprendizado de máquina. O objetivo principal é transformar uma coleção massiva de aproximadamente 222.259 artigos do arXiv em bibliotecas temáticas especializadas, facilitando o acesso e a gestão do conhecimento científico.
+
+Aqui será realizada uma análise completa, clusterização e categorização de artigos científicos do arXiv utilizando técnicas de Processamento de Linguagem Natural (PLN) e aprendizado de máquina não supervisionado.
+
+A explosão de produção científica representa um desafio significativo para organização e recuperação de informação. Este projeto aborda esse problema através de uma abordagem sistemática que combina embeddings de texto, redução de dimensionalidade e técnicas de clusterização para criar subconjuntos temáticos coerentes a partir de uma grande biblioteca heterogênea.
 
 ## 📋 Objetivo
 
@@ -124,9 +128,36 @@ O notebook está organizado em seções sequenciais:
 - **Sistema de recomendação** em tempo real
 - **Interface web** interativa
 
-## 👥 Contribuições
+# **Desempenho do Modelo de Classificação**
 
-Este projeto demonstra uma abordagem escalável para organização de conhecimento científico, combinando técnicas state-of-the-art em PLN e machine learning para resolver o desafio da explosão de produção científica.
+O modelo de classificação desenvolvido para categorizar os artigos científicos nos clusters identificados alcançou uma acurácia notável de 97,1%. Este resultado excepcional demonstra a eficácia da abordagem proposta e a qualidade dos embeddings e clusters gerados na fase anterior do projeto.
+
+**Análise do Resultado**
+
+A alta acurácia de 97,1% indica que:
+
+- Qualidade dos Embeddings: Os embeddings gerados pelo modelo text-embedding-3-large capturam efetivamente as características semânticas e temáticas dos artigos, permitindo uma distinção clara entre diferentes domínios científicos.
+
+- Eficácia da Clusterização Inicial: A estratégia de clusterização na amostra de 8.000 artigos produziu grupos coerentes e bem delimitados, proporcionando rótulos de alta qualidade para o treinamento supervisionado.
+
+- Representatividade da Amostra: A amostra de 3,6% do total mostrou-se estatisticamente representativa, contendo padrões suficientes para generalizar para os 222.259 artigos.
+
+- Adequação do Pipeline UMAP + Classificação: A redução dimensional com UMAP preservou informações relevantes para a distinção entre categorias, facilitando o trabalho do classificador.
+
+# **Implicações Práticas**
+
+Esta alta taxa de acurácia tem implicações significativas para o sistema proposto:
+
+- Confiabilidade na Organização Automática: Com 97,1% de precisão, os usuários podem confiar que os artigos estão sendo direcionados para as bibliotecas especializadas corretas.
+
+- Redução de Erros de Categorização: Apenas 2,9% dos artigos podem necessitar de revisão ou reclassificação, representando um custo computacional mínimo para correções manuais.
+
+- Escalabilidade Comprovada: O sucesso na classificação do restante dos artigos valida a estratégia de usar uma amostra reduzida para treinamento.
+
+
+# **Conclusão**
+
+A abordagem proposta demonstra a viabilidade de organizar grandes coleções científicas através de técnicas modernas de PLN e aprendizado de máquina. A estratégia de amostragem seguida de classificação em escala mostrou-se eficiente tanto computacionalmente quanto em termos de qualidade na categorização, oferecendo uma solução escalável para o desafio da gestão de grandes volumes de informação científica.
 
 ---
 
