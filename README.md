@@ -144,7 +144,7 @@ A alta acurácia de 97,1% indica que:
 
 - Adequação do Pipeline UMAP + Classificação: A redução dimensional com UMAP preservou informações relevantes para a distinção entre categorias, facilitando o trabalho do classificador.
 
-# **Implicações Práticas**
+## **Implicações Práticas**
 
 Esta alta taxa de acurácia tem implicações significativas para o sistema proposto:
 
